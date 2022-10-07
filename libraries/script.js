@@ -7,7 +7,6 @@ gsap.fromTo('#cloud3',{yPercent: 20}, {yPercent: 0, yoyo: true, repeat: -1, ease
 gsap.fromTo('#cloud4',{yPercent: 0}, {yPercent: 20, yoyo: true, repeat: -1, ease: 'power1.inOut', duration: 1});
 
 function showCollapse(item){
-    console.log(item);
     var faqAns = document.getElementById('sec-faq-ans-cont' + '_' + item).getBoundingClientRect();
     if(faqAns.height === 0) { //SHOW FAQ
         document.getElementById('faq-title' + '_' + item).classList.add('faq-btn-emphasis');
