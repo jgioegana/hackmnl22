@@ -48,6 +48,10 @@ header {
   z-index: 99;
 }
 
+a:-webkit-any-link {
+  color: var(--clr-second);
+}
+
 .text-accent {
   color: var(--clr-second);
 }
