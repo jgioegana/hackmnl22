@@ -52,13 +52,6 @@ header {
   color: var(--clr-second);
 }
 
-.vertical-line {
-  border-left: solid var(--clr-white);
-  height: 128px;
-  width: 100%;
-  margin: 64px 0 64px 50%;
-}
-
 #logo {
   /* background-color: blue; */
   background-image: url('media/logo.png');
@@ -401,6 +394,17 @@ header {
   font-size: 1.8vmax;
   padding-left: 3vmax;
   padding-right: 3vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow:column;
+}
+
+.sec-3-vertical-line {
+  margin: 2vmax 0 2vmax;
+  background-color: var(--clr-white);
+  height: 10vmax;
+  width: 0.2vmax;
 }
 
 #sec-3-sched {
@@ -758,6 +762,117 @@ button a {
   background-image: url('media/m7.jpg');
 }
 
+
+
+#sec-faq {
+  margin-top: 16%;
+  /* background-color: pink; */
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#sec-faq-lbl {
+  text-align: center;
+  font-family: var(--ff-second);
+  color: var(--clr-white);
+  font-size: 2.5vw;
+  margin-bottom: 2%;
+}
+
+#sec-faq-topics {
+  margin-top: 1%;
+  /* background-color: purple; */
+  width: 80vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.faq-topic-cont {
+  /* background-color: blue; */
+  width: 80vw;
+  height: auto;
+}
+
+.faq-topic-cont:hover {
+  cursor: pointer;
+}
+
+.faq-title {
+  /* background-color: black; */
+  font-family: var(--ff-third);
+  color: var(--clr-white);
+  width: 80%;
+  float: left;
+  word-wrap: break-word;
+  font-size: 1.1vmax;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+  transition-duration: 0.5s;
+}
+
+.faq-title span {
+  margin-left: 1vmax;
+}
+
+.faq-title:hover {
+  color: var(--clr-second);
+  cursor: pointer;
+}
+
+.faq-btn {
+  /* background-color: red; */
+  color: var(--clr-white);
+  width: 20%;
+  height: auto;
+  float: right;
+  text-align: center;
+  font-size: 1.1vmax;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+}
+
+.faq-btn-emphasis {
+  color: var(--clr-second);
+}
+
+.faq-divider {
+  background-color: var(--clr-white);
+  width: 100%;
+  height: 0.1vw;
+}
+
+.faq-divStarter {
+  margin-top: 2%;
+  clear: both;
+}
+
+.faq-ans-cont {
+  /* background-color: green; */
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.faq-ans {
+  word-wrap: break-word;
+  color: var(--clr-white);
+  font-size: 0.9vw;
+  font-family: var(--ff-second);
+  margin-top: 1.5vmax;
+}
+
+
+
+
+
 #sec-7 {
   /* background-color: orange; */
   width: 100%;
@@ -810,6 +925,7 @@ button a {
   align-items: center;
   justify-content: center;
 }
+
 
 #sec-7-cta:hover {
   background-color: var(--clr-white);
@@ -945,10 +1061,62 @@ button a {
   #sec-1-rocket {
     top: 40%;
   }
+
+  .faq-lbl {
+    font-size: 2.9vw;
+  }
+
+  .faq-title {
+    font-size: 1.5vw;
+  }
+
+  .faq-btn {
+    font-size: 1.5vw;
+  }
+
+  .faq-ans {
+    font-size: 1vw;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1023px) and (max-height: 375px) {
-  /* Normalize site */
+  #sec-faq {
+    margin-top: 15%;
+  }
+
+  #sec-faq-lbl {
+    font-size: 2.5vw;
+    margin-bottom: 2.5%;
+  }
+
+  .faq-title {
+    font-size: 1.8vw;
+    margin-top: 2.25vw;
+    margin-bottom: 1.75vw;
+  }
+
+  .faq-title span {
+    margin-left: 1.75vmax;
+  }
+
+  .faq-btn {
+    font-size: 1.8vw;
+    margin-top: 2.25vw;
+    margin-bottom: 1.75vw;
+  }
+
+  .faq-divider {
+    height: 0.15vw;
+  }
+
+  .faq-divStarter {
+    margin-top: 8%;
+  }
+
+  .faq-ans {
+    font-size: 1.7vw;
+    margin-top: 3vw;
+  }
 }
 
 @media only screen and (min-width: 479px) and (max-width: 768px) {
@@ -1081,6 +1249,48 @@ button a {
     top: 50%;
     left: 0%;
   }
+
+
+  #sec-faq {
+    margin-top: 30%;
+  }
+
+  #sec-faq-lbl {
+    font-size: 5vw;
+    margin-bottom: 5%;
+  }
+
+  .faq-title {
+    font-size: 3.6vw;
+    margin-top: 4.5vw;
+    margin-bottom: 3.5vw;
+  }
+
+  .faq-title span {
+    margin-left: 3.5vmax;
+  }
+
+  .faq-btn {
+    font-size: 3.6vw;
+    margin-top: 4.5vw;
+    margin-bottom: 3.5vw;
+  }
+
+  .faq-divider {
+    height: 0.3vw;
+  }
+
+  .faq-divStarter {
+    margin-top: 16%;
+  }
+
+  .faq-ans {
+    font-size: 3.4vw;
+    margin-top: 6vw;
+  }
+
+
+
 
   #sec-7-endInvite {
     padding-right: 3vmax;
