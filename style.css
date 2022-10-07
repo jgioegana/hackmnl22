@@ -803,6 +803,7 @@ button a {
   /* background-color: blue; */
   width: 80vw;
   height: auto;
+  max-width: 1024px;
 }
 
 .faq-topic-cont:hover {
@@ -871,6 +872,7 @@ button a {
   font-size: 0.9vw;
   font-family: var(--ff-second);
   margin-top: 1.5vmax;
+  opacity: 0.8;
 }
 
 
