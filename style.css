@@ -877,6 +877,10 @@ button a {
   background-image: url('media/s4.png');
 }
 
+#sec-sponsor-s5 {
+  background-image: url('media/s5.png');
+}
+
 #sec-prtnrSpnsrs-endInvite {
   text-align: center;
   font-family: var(--ff-second);
