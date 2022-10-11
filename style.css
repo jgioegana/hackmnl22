@@ -48,10 +48,6 @@ header {
   z-index: 99;
 }
 
-a:-webkit-any-link {
-  color: var(--clr-second);
-}
-
 .text-accent {
   color: var(--clr-second);
 }
@@ -767,7 +763,41 @@ button a {
 }
 
 
-#sec-partners {
+
+.sp-logo {
+  background-color: var(--clr-white);
+  /* background-color: red; */
+  width: 15vmax;
+  height: 10vmax;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.sec-prtnrSpnsrs-title {
+  background-color: var(--clr-white);
+  /* background-color: violet; */
+  font-family: var(--ff-second);
+  color: var(--clr-third);
+  font-size: 2.5vmax;
+  text-align: center;
+  margin-bottom: 2vmax;
+}
+
+.sec-prtnrSpnsrs-logo-gallery {
+  background-color: var(--clr-white);
+  /* background-color: gray; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 5vmax;
+  margin-bottom: 9vmax;
+}
+
+#sec-prtnrSpnsrs {
   margin-top: 16vmax;
   /* background-color: var(--clr-third); */
   background-color: var(--clr-white);
@@ -780,37 +810,7 @@ button a {
 }
 
 #sec-partners-title {
-  background-color: var(--clr-white);
-  /* background-color: violet; */
-  font-family: var(--ff-second);
-  color: var(--clr-third);
-  font-size: 2.5vmax;
-  text-align: center;
   margin-top: 6vmax;
-  margin-bottom: 2vmax;
-}
-
-#sec-partners-logo-gallery {
-  background-color: var(--clr-white);
-  /* background-color: gray; */
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row wrap;
-  gap: 5vmax;
-  margin-bottom: 8vmax;
-}
-
-.partner-logo {
-  background-color: var(--clr-white);
-  /* background-color: red; */
-  width: 15vmax;
-  height: 10vmax;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 
 #sec-partner-p1 {
@@ -857,7 +857,27 @@ button a {
   background-image: url('media/p11.png');
 }
 
-#sec-partners-endInvite {
+#sec-partner-p12 {
+  background-image: url('media/p12.png');
+}
+
+#sec-sponsor-s1 {
+  background-image: url('media/s1.png');
+}
+
+#sec-sponsor-s2 {
+  background-image: url('media/s2.png');
+}
+
+#sec-sponsor-s3 {
+  background-image: url('media/s3.png');
+}
+
+#sec-sponsor-s4 {
+  background-image: url('media/s4.png');
+}
+
+#sec-prtnrSpnsrs-endInvite {
   text-align: center;
   font-family: var(--ff-second);
   color: var(--clr-third);
@@ -867,29 +887,28 @@ button a {
   margin-right: 2vmax;
 }
 
-#sec-partners-cta {
+#sec-prtnrSpnsrs-cta {
   text-decoration: none;
   background-color: var(--clr-cta);
   text-align: center;
   line-height: 2.2vmax;
   font-family: var(--ff-second);
   color: var(--clr-white);
-  font-size: 1.2vmax;
-  margin-top: 2vmax;
+  font-size: 0.8vmax;
   width: 10vmax;
   height: 3vmax;
   transition-duration: 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2vmax;
   margin-bottom: 10vmax;
 }
 
-#sec-partners-cta:hover {
+#sec-prtnrSpnsrs-cta:hover {
   background-color: var(--clr-third);
   color: var(--clr-white);
 }
-
 
 
 #sec-faq {
@@ -1247,6 +1266,14 @@ button a {
     font-size: 1.7vw;
     margin-top: 3vw;
   }
+
+  #sec-prtnrSpnsrs-cta {
+    width: 20vmax;
+    height: 5vmax;
+    line-height: 4.5vmax;
+    font-size: 1.5vmax;
+    margin-top: 2.5vmax;
+  }
 }
 
 @media only screen and (min-width: 479px) and (max-width: 768px) {
@@ -1314,10 +1341,25 @@ button a {
     top: 50%;
     left: 5%;
   }
+
+  #sec-prtnrSpnsrs-cta {
+    width: 20vmax;
+    height: 5vmax;
+    line-height: 4.5vmax;
+    font-size: 1.5vmax;
+    margin-top: 2.5vmax;
+  }
 }
 
 @media screen and (min-width: 479px) and (max-width: 768px) and (max-height: 345px) {
   /* Normalize site */
+  #sec-prtnrSpnsrs-cta {
+    width: 20vmax;
+    height: 5vmax;
+    line-height: 4.5vmax;
+    font-size: 1.5vmax;
+    margin-top: 2.5vmax;
+  }
 }
 
 @media only screen and (max-width: 478px) {
@@ -1380,6 +1422,14 @@ button a {
     left: 0%;
   }
 
+
+  #sec-prtnrSpnsrs-cta {
+    width: 20vmax;
+    height: 5vmax;
+    line-height: 4.5vmax;
+    font-size: 1.5vmax;
+    margin-top: 2.5vmax;
+  }
 
   #sec-faq {
     margin-top: 30%;
